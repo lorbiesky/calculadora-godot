@@ -17,7 +17,7 @@ Este é um simples projeto de calculadora desenvolvido em Godot, uma engine de j
 2. Clone este repositório em sua máquina local:
 
 ```shell
-git clone https://github.com/lorbiesky/calculadora_godot.git
+git clone https://github.com/lorbiesky/calculadora-godot.git
 ```
 
 3. Abra o Godot e importe o projeto:

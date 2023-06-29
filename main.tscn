@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://dhk55hweutmn4"]
+[gd_scene load_steps=2 format=3 uid="uid://dhk55hweutmn4"]
+
+[ext_resource type="Script" path="res://calculadora.gd" id="1_dwt1v"]
 
 [node name="Main" type="CanvasLayer"]
+script = ExtResource("1_dwt1v")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -18,7 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
+theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
@@ -43,104 +46,104 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3
 
-[node name="DivisaoButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Div" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "÷"
 
-[node name="MultiplicacaoButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Mult" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
-text = "x"
+text = "*"
 
-[node name="LimparButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Reset" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "C"
 
-[node name="SeteButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="7" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "7"
 
-[node name="OitoButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="8" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "8"
 
-[node name="NoveButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="9" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "9"
 
-[node name="QuatroButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="4" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "4"
 
-[node name="CincoButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="5" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "5"
 
-[node name="SeisButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="6" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "6"
 
-[node name="UmButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="1" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "1"
 
-[node name="DoisButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="2" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "2"
 
-[node name="TresButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="3" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "3"
 
-[node name="VoidButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="VoidButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 
-[node name="ZeroButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="0" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "0"
 
-[node name="VirgulaButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Virg" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/GridContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -151,27 +154,37 @@ text = ","
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 
-[node name="ApagarButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Apagar" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" groups=["button"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "←"
 
-[node name="SubtracaoButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Sub" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" groups=["button"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "-"
 
-[node name="SomaButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Som" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" groups=["button"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 22
 text = "+"
 
-[node name="IgualButton" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Igual" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" groups=["button"]]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.01
 theme_override_font_sizes/font_size = 22
 text = "="
+
+[node name="HistoricoText" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -49.0
+offset_top = 13.0
+offset_right = -9.0
+offset_bottom = 36.0
+grow_horizontal = 0
